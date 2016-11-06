@@ -8,8 +8,16 @@ slaves to connect to. It then writes a json file that can be used for
 nagios monitoring or dashboards.
 
 Its a simple app I first wrote in PHP. Its my first foray back into java
-and Spring, so its a little rough around the edges, but it works and 
-only needs minor tweaks if it were to be used in an enterprise 
-environment, but maybe not. If you were to switch environments you may 
-decide to modify the properties files and that may or may not require 
+and Spring, so its a little rough around the edges, but it works and
+only needs minor tweaks if it were to be used in an enterprise
+environment, but maybe not. If you were to switch environments you may
+decide to modify the properties files and that may or may not require
 changes to the Application.java file.
+
+build a jar:
+
+``mvn package``
+
+Run the app
+
+``java -jar target/SlaveStatus-1.0.0.jar``
